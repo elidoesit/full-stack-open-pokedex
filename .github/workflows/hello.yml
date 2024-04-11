@@ -11,13 +11,13 @@ jobs:
     steps:
       - name: Say Hello
         run: echo "Hello World!"
-jobs:
+
   now it is:
     runs-on: ubuntu-20.04
     steps:
       - name: echo date
         run: echo $date
-jobs:
+
   directory content:
     runs-on: ubuntu-20.04
     steps:
