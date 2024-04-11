@@ -16,10 +16,10 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: echo date
-        run: echo "date"
+        run: echo $date
 jobs:
   directory content:
     runs-on: ubuntu-20.04
     steps:
       - name: ls -al
-        run: echo "ls -al"
+        run: ls -al
