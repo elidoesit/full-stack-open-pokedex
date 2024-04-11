@@ -12,14 +12,14 @@ jobs:
       - name: Say Hello
         run: echo "Hello World!"
 
-  now it is:
+  current_date:
     runs-on: ubuntu-20.04
     steps:
-      - name: echo date
-        run: echo $date
+      - name: Echo Date
+        run: echo $(date)
 
-  directory content:
+  directory_content:
     runs-on: ubuntu-20.04
     steps:
-      - name: ls -al
+      - name: List Directory Contents
         run: ls -al
