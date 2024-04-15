@@ -26,7 +26,7 @@ jobs:
         with:
           command: npm run cypress:open
           start: npm run start-prod
-          wait-on: http://localhost:3001
+          wait-on: http://localhost:8080
       - name: deploy
         uses: superfly/flyctl-actions/setup-flyctl@master
         with:
