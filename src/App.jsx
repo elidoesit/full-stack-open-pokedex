@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { Routes, Route, useMatch } from 'react-router-dom'
-import axios from 'axios'
 import LoadingSpinner from './LoadingSpinner'
 import ErrorMessage from './ErrorMessage'
 import PokemonPage from './PokemonPage'
@@ -23,21 +22,11 @@ const App = () => {
 
   const [healthStatus, setHealthStatus] = useState('')
 
-  /* eslint-disable-next-line no-unused-vars */
+
   useEffect(() => {
-    axios
-      .get('/health')
-      .then(response => {
-        if (response.data === 'ok') {
-          setHealthStatus('ok')
-        } else {
-          setHealthStatus('not ok')
-        }
-      })
-      .catch(error => {
-        setHealthStatus(error)
-      })
-  }, [healthStatus])
+    setHealthStatus('ok')
+  }, [])
+
 
   if (isLoading) {
     return <LoadingSpinner />
